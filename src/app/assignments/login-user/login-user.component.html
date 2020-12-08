@@ -1,0 +1,10 @@
+<form ngForm class="form" #assignmentForm>
+    <mat-form-field>
+      <input matInput placeholder="nom" [(ngModel)]="login" name="login">
+    </mat-form-field>
+    <mat-form-field>
+        <input type="password" matInput placeholder="password" [(ngModel)]="password" name="password">
+      </mat-form-field>
+  
+    <button mat-button color="warn" (click)="onLogin($event)">Valider</button>
+  </form>
